@@ -29,19 +29,10 @@
 - Дата оплати рахунку > дата виставлення рахунку
 
 ---
+##  ER-модель (5NF)
+
 <img width="672" height="425" alt="image" src="https://github.com/user-attachments/assets/f3411e8d-a929-47d1-ab31-fad6dc385e5d" />
 
-## 🏗️ ER-модель (5NF)
-
-```
-zip_codes ←── addresses ←── clients ──→ client_phones
-                                ↓
-managers (рекурс.) ──→ orders ──→ order_lines ──→ products ──→ suppliers
-     ↓                   ↓                            ↓           (рекурс.)
-warehouses ──→ stock ←──┘       invoices ──→ payments
-     ↓
-shipments ──→ deliveries
-```
 
 ### Таблиці (15, приведено до 5NF)
 
@@ -66,7 +57,7 @@ shipments ──→ deliveries
 
 ---
 
-## 📁 Файли проєкту
+## Файли проєкту
 
 | Файл | Призначення |
 |---|---|
@@ -76,7 +67,7 @@ shipments ──→ deliveries
 
 ---
 
-## ▶️ Як запустити
+## Як запустити
 
 ```sql
 -- 1. Створити структуру БД
@@ -97,7 +88,7 @@ ORDER BY TABLE_NAME;
 
 ---
 
-## 🔑 Бізнес-правила
+## Бізнес-правила
 
 | # | Правило | Обмеження T-SQL |
 |---|---|---|
